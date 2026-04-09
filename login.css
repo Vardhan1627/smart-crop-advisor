@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f3d4c, #9b2c2c);
+  color: white;
+  overflow: hidden;
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255,255,255,0.12), transparent 35%);
+}
+
+.login-box {
+  width: 520px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.farmer-icon {
+  font-size: 58px;
+  margin-bottom: 14px;
+}
+
+.login-box h1 {
+  font-size: 46px;
+  margin: 0 0 10px;
+}
+
+.login-box p {
+  font-size: 22px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+select,
+button {
+  width: 100%;
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 14px;
+  border: none;
+  font-size: 20px;
+}
+
+select {
+  background: rgba(255,255,255,0.95);
+}
+
+button {
+  background: rgba(255,255,255,0.18);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+  background: rgba(255,255,255,0.24);
+}
